@@ -1,11 +1,18 @@
 import {
+  FaClapperboard,
   FaEnvelope,
   FaGraduationCap,
   FaLinkedin,
   FaLocationArrow,
+  FaMotorcycle,
+  FaSpaceAwesome,
 } from "react-icons/fa6";
 import InfoCards from "./common/InfoCard";
 import Badge from "./common/Badge";
+import { SiMarvelapp } from "react-icons/si";
+import { DiscAlbumIcon } from "lucide-react";
+import InterestCard from "./common/InterestCard";
+import { MdSurfing } from "react-icons/md";
 
 const About = () => {
   const skills = [
@@ -47,6 +54,33 @@ const About = () => {
           vishnukumar20
         </a>
       ),
+    },
+  ];
+
+  const interestAndHobbies = [
+    {
+      icon: <FaMotorcycle className="icon " />,
+      value: "Riding",
+    },
+    {
+      icon: <FaSpaceAwesome className="icon" />,
+      value: "Space Exploration",
+    },
+    {
+      icon: <FaClapperboard className="icon" />,
+      value: "Movies/Series",
+    },
+    {
+      icon: <MdSurfing className="icon" />,
+      value: "Internet Surfing",
+    },
+    {
+      icon: <DiscAlbumIcon className="icon" />,
+      value: "Dancing",
+    },
+    {
+      icon: <SiMarvelapp className="icon" />,
+      value: "MCU Fan",
     },
   ];
 
@@ -109,6 +143,12 @@ const About = () => {
           </div>
 
           <InfoCards data={infoData} />
+
+          <h2 className="header line-after text-2xl font-bold mt-5">
+            Interest & Hobbies
+          </h2>
+
+          <InterestCard data={interestAndHobbies} />
         </div>
       </div>
     </section>
