@@ -1,8 +1,8 @@
 import Home from "./components/Home";
 import About from "./components/About";
-import Projects from "./components/Projects";
 import Contact from "./components/Contact";
 import Sidebar from "./components/sidebar/Sidebar";
+import Portfolio from "./components/portfolio/Portfolio";
 
 const App = () => {
   return (
@@ -16,7 +16,7 @@ const App = () => {
 
         <About />
 
-        <Projects />
+        <Portfolio />
 
         <Contact />
       </main>

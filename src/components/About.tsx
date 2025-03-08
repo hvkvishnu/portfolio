@@ -85,10 +85,10 @@ const About = () => {
   ];
 
   return (
-    <section id="about" className="h-screen flex flex-col mt-10 px-10">
+    <section id="about" className="h-auto flex flex-col mt-10 px-10">
       <h2 className="line-after header text-4xl font-bold mb-10">About Me</h2>
 
-      <div className="flex flex-col md:flex-row gap-10">
+      <div className="flex flex-col md:flex-row gap-10 pt-15">
         {/* Profile Image */}
         <img
           src="src/assets/about.jpeg"
