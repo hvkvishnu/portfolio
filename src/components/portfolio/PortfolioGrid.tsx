@@ -1,4 +1,5 @@
 import React from "react";
+import { motion } from "framer-motion";
 import { PortfolioItem } from "../../types";
 
 type PortfolioGridProps = {
@@ -13,19 +14,25 @@ const PortfolioGrid: React.FC<PortfolioGridProps> = ({
   return (
     <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
       {items.map((item, index) => (
-        <div
+        <motion.div
           key={item.id}
           className="rounded-lg shadow-lg overflow-hidden cursor-pointer"
           onClick={() =>
             item.link ? window.open(item.link, "_blank") : onItemClick(index)
           }
+          initial={{ opacity: 0, scale: 0.9 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.3 }}
+          whileHover={{ scale: 1.05 }}
         >
-          <img
+          <motion.img
             src={item.imageUrl}
             alt={item.title}
             className="w-full h-64 object-cover"
+            whileHover={{ scale: 1.1 }}
+            transition={{ duration: 0.3 }}
           />
-        </div>
+        </motion.div>
       ))}
     </div>
   );

@@ -1,8 +1,8 @@
 import Home from "./components/Home";
 import About from "./components/About";
-import Contact from "./components/Contact";
 import Sidebar from "./components/sidebar/Sidebar";
 import Portfolio from "./components/portfolio/Portfolio";
+import Resume from "./components/Resume";
 
 const App = () => {
   return (
@@ -18,7 +18,7 @@ const App = () => {
 
         <Portfolio />
 
-        <Contact />
+        <Resume />
       </main>
     </div>
   );
