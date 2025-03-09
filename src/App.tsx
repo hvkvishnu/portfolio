@@ -2,7 +2,7 @@ import Home from "./components/Home";
 import About from "./components/About";
 import Sidebar from "./components/sidebar/Sidebar";
 import Portfolio from "./components/portfolio/Portfolio";
-import Resume from "./components/Resume";
+import Resume from "./components/resume/Resume";
 
 const App = () => {
   return (

@@ -31,6 +31,10 @@
 
 @layer components {
   .badge {
+    @apply inline-flex items-center rounded-full px-3 py-1 font-medium ring-1 ring-purple-700/10 ring-inset;
+  }
+  
+  .badge-animate {
     @apply bg-indigo-300/50 hover:bg-indigo-600 dark:bg-gray-800 dark:border-gray-700 hover:text-white text-indigo-500 transition-colors duration-300;
   }
 

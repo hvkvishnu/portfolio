@@ -30,7 +30,7 @@ const Sidebar = () => {
           <p className="hover:text-gray-50">About</p>
         </Link>
         <Link
-          to="projects"
+          to="portfolio"
           smooth={true}
           duration={500}
           className="cursor-pointer flex gap-4 text-gray-400 text-center"
@@ -39,13 +39,13 @@ const Sidebar = () => {
           <p className="hover:text-gray-50">Portfolio</p>
         </Link>
         <Link
-          to="contact"
+          to="resume"
           smooth={true}
           duration={500}
           className="cursor-pointer flex gap-4 text-gray-400 text-center"
         >
           <FaPhoneAlt className="w-6 h-6" />
-          <p className="hover:text-gray-50">Contact</p>
+          <p className="hover:text-gray-50">Resume</p>
         </Link>
       </nav>
     </aside>

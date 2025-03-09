@@ -14,7 +14,7 @@ const Profile = () => {
 
       {/* Social Icons */}
       <div className="mt-4 flex justify-center gap-4">
-        <div className="h-8 w-8 badge rounded-full">
+        <div className="h-8 w-8 badge-animate rounded-full">
           <a
             href="https://www.linkedin.com/in/vishnukumarh20/"
             target="_blank"
@@ -24,7 +24,7 @@ const Profile = () => {
             <FaLinkedin className="h-4 w-4" />
           </a>
         </div>
-        <div className="h-8 w-8 badge rounded-full">
+        <div className="h-8 w-8 badge-animate rounded-full">
           <a
             href="mailto:hvkvishnukumar11@gmail.com"
             className="flex items-center justify-center gap-2 mt-2"

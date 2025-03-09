@@ -98,31 +98,35 @@ const Portfolio: React.FC = () => {
   );
 
   return (
-    <div className="h-lvh p-6 mt-20">
-      <h2 className="line-after header text-4xl font-bold mb-10">Portfolio</h2>
+    <section id="portfolio">
+      <div className="h-lvh p-6 mt-20">
+        <h2 className="line-after header text-4xl font-bold mb-10">
+          Portfolio
+        </h2>
 
-      {/* Category Filters */}
-      <PortfolioFilter
-        categories={categories}
-        activeCategory={activeCategory}
-        onSelectCategory={setActiveCategory}
-      />
-
-      {/* Portfolio Grid */}
-      <PortfolioGrid items={filteredItems} onItemClick={handleOpen} />
-
-      {/* Gallery Modal */}
-      {selectedIndex !== null && (
-        <GalleryModal
-          imageUrl={filteredItems[selectedIndex].imageUrl}
-          isOpen={selectedIndex !== null}
-          onClose={handleClose}
-          onNext={handleNext}
-          onPrev={handlePrev}
-          title={filteredItems[selectedIndex].title}
+        {/* Category Filters */}
+        <PortfolioFilter
+          categories={categories}
+          activeCategory={activeCategory}
+          onSelectCategory={setActiveCategory}
         />
-      )}
-    </div>
+
+        {/* Portfolio Grid */}
+        <PortfolioGrid items={filteredItems} onItemClick={handleOpen} />
+
+        {/* Gallery Modal */}
+        {selectedIndex !== null && (
+          <GalleryModal
+            imageUrl={filteredItems[selectedIndex].imageUrl}
+            isOpen={selectedIndex !== null}
+            onClose={handleClose}
+            onNext={handleNext}
+            onPrev={handlePrev}
+            title={filteredItems[selectedIndex].title}
+          />
+        )}
+      </div>
+    </section>
   );
 };
 
