@@ -57,18 +57,26 @@ const portfolioItems: PortfolioItem[] = [
   },
   {
     id: 9,
+    category: "Certifications",
+    imageUrl: "src/assets/portfolio/GCP_AI_Badge.png",
+    link: "https://www.credly.com/badges/4d25f9df-fdc1-436e-8093-87ba7fc13797/public_url",
+    title:
+      "Develop Advanced Enterprise Search and Conversation Applications Skill Badge",
+  },
+  {
+    id: 10,
     category: "Awards",
     imageUrl: "src/assets/portfolio/Hackathon_2022.jpeg",
     title: "Winner of Hackathon 2022",
   },
   {
-    id: 10,
+    id: 11,
     category: "Awards",
     imageUrl: "src/assets/portfolio/Hackathon_2023.JPG",
     title: "Runner up of Hackathon 2023",
   },
   {
-    id: 11,
+    id: 12,
     category: "Awards",
     imageUrl: "src/assets/portfolio/Hackathon_2024.png",
     title: "Winner of hackathon 2024",

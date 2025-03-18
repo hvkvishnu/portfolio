@@ -5,7 +5,7 @@ export type ResumeData = {
 };
 
 export type ResumeContent = {
-  description: string;
+  description?: string;
   badge?: string;
   details: string[];
   image?: string;

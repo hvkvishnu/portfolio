@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
 type GalleryModalProps = {
@@ -10,7 +10,29 @@ type GalleryModalProps = {
   title?: string;
 };
 
-const GalleryModal: React.FC<GalleryModalProps> = ({ imageUrl, isOpen, onClose, onNext, onPrev, title }) => {
+const GalleryModal: React.FC<GalleryModalProps> = ({
+  imageUrl,
+  isOpen,
+  onClose,
+  onNext,
+  onPrev,
+  title,
+}) => {
+  useEffect(() => {
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if (e.key === "ArrowRight") {
+        onNext();
+      } else if (e.key === "ArrowLeft") {
+        onPrev();
+      } else if (e.key === "Escape") {
+        onClose();
+      }
+    };
+
+    window.addEventListener("keydown", handleKeyDown);
+    return () => window.removeEventListener("keydown", handleKeyDown);
+  }, [onNext, onPrev, onClose]);
+
   return (
     <AnimatePresence>
       {isOpen && (
