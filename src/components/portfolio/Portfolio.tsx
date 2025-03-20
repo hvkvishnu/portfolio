@@ -107,7 +107,7 @@ const Portfolio: React.FC = () => {
 
   return (
     <section id="portfolio">
-      <div className="h-lvh p-6 mt-20">
+      <div className="h-full lg:h-screen p-6 mt-20">
         <h2 className="line-after header text-4xl font-bold mb-10">
           Portfolio
         </h2>

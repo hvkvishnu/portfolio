@@ -13,7 +13,7 @@ const App = () => {
       <Sidebar />
 
       {/* Main Content Area */}
-      <main className="ml-60 dark:bg-gray-950 bg-gray-50 w-full">
+      <main className="lg:ml-60 dark:bg-gray-950 bg-gray-50 w-full">
         <Home />
 
         <About />

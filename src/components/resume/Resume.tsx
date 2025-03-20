@@ -12,7 +12,7 @@ const Resume = () => {
     <section id="resume" className="h-auto p-6">
       <h2 className="header line-after text-4xl font-bold">Resume</h2>
 
-      <div className="grid grid-cols-[1.5fr_1.75fr] gap-20 pt-10">
+      <div className="grid md:grid-cols-[1.5fr_1.75fr] gap-20 pt-10">
         <div className="flex flex-col gap-15" id="column-left">
           <div>
             <div className={subHeadCss}>Education</div>
