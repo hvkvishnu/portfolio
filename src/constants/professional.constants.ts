@@ -17,6 +17,7 @@ export const ProfessionalDetails: ResumeData[] = [
           "Effectively handled dynamic webpage flows and managed error scenarios.",
           "Managed high volumes of eligibility requests while ensuring scalability and minimizing the load on payer portals.",
         ],
+        image: "src/assets/portfolio/A&B_Reveal.png",
       },
       {
         badge: "EDI Healthcare - Application support and Internal development",

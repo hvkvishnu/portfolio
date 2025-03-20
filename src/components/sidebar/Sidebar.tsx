@@ -1,51 +1,60 @@
 import { Link } from "react-scroll";
 import Profile from "./Profile";
 import ThemeToggle from "./ThemeToggle";
-import { FaAddressCard, FaBriefcase, FaHome, FaPhoneAlt } from "react-icons/fa";
+import { FaAddressCard, FaBriefcase, FaHome } from "react-icons/fa";
+import { FaFile } from "react-icons/fa6";
 
 const Sidebar = () => {
   return (
-    <aside className="fixed top-0 left-0 h-screen w-60 bg-gray-200 dark:bg-gray-800 text-black dark:text-white flex flex-col gap-4 items-center py-10 shadow-lg">
+    <aside className="fixed top-0 left-0 h-screen w-60 bg-gray-800 text-white flex flex-col gap-4 items-center py-10 shadow-lg">
       <Profile />
 
       <ThemeToggle />
 
       <nav className="mt-6 flex flex-col gap-8 text-lg">
         <Link
-          to="hero"
+          to="home"
           smooth={true}
           duration={500}
-          className="cursor-pointer flex gap-4 text-gray-400 items-center"
+          className="sidenav-link group"
+          activeClass="active"
+          spy={true}
         >
-          <FaHome className="w-6 h-6" />
-          <p className="hover:text-gray-50">Home</p>
+          <FaHome className="sidenav-icon " />
+          <p className="sidenav-menu">Home</p>
         </Link>
         <Link
           to="about"
           smooth={true}
           duration={500}
-          className="cursor-pointer flex gap-4 text-gray-400 items-center"
+          className="sidenav-link group"
+          activeClass="active"
+          spy={true}
         >
-          <FaAddressCard className="w-6 h-6" />
-          <p className="hover:text-gray-50">About</p>
+          <FaAddressCard className="sidenav-icon" />
+          <p className="sidenav-menu">About</p>
         </Link>
         <Link
           to="portfolio"
           smooth={true}
           duration={500}
-          className="cursor-pointer flex gap-4 text-gray-400 text-center"
+          className="sidenav-link group"
+          activeClass="active"
+          spy={true}
         >
-          <FaBriefcase className="w-6 h-6" />
-          <p className="hover:text-gray-50">Portfolio</p>
+          <FaBriefcase className="sidenav-icon" />
+          <p className="sidenav-menu">Portfolio</p>
         </Link>
         <Link
           to="resume"
           smooth={true}
           duration={500}
-          className="cursor-pointer flex gap-4 text-gray-400 text-center"
+          className="sidenav-link group"
+          activeClass="active"
+          spy={true}
         >
-          <FaPhoneAlt className="w-6 h-6" />
-          <p className="hover:text-gray-50">Resume</p>
+          <FaFile className="sidenav-icon" />
+          <p className="sidenav-menu">Resume</p>
         </Link>
       </nav>
     </aside>

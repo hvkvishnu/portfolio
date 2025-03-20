@@ -33,9 +33,9 @@
   .badge {
     @apply inline-flex items-center rounded-full px-3 py-1 font-medium ring-1 ring-purple-700/10 ring-inset;
   }
-  
+
   .badge-animate {
-    @apply bg-indigo-300/50 hover:bg-indigo-600 dark:bg-gray-800 dark:border-gray-700 hover:text-white text-indigo-500 transition-colors duration-300;
+    @apply hover:bg-indigo-600 dark:bg-gray-800 dark:border-gray-700 hover:text-white text-indigo-500 transition-colors duration-300;
   }
 
   .header {
@@ -80,5 +80,25 @@
 
   .btn-secondary-fixed {
     @apply bg-gray-200 dark:bg-gray-800 dark:border-gray-700;
+  }
+
+  .sidenav-link {
+    @apply cursor-pointer flex gap-4 text-gray-400 items-center;
+  }
+
+  .sidenav-icon {
+    @apply w-6 h-6 group-hover:text-indigo-600;
+  }
+
+  .sidenav-link.active .sidenav-icon {
+    @apply text-indigo-600;
+  }
+
+  .sidenav-menu {
+    @apply hover:text-gray-50;
+  }
+
+  .sidenav-link.active .sidenav-menu {
+    @apply text-gray-50;
   }
 }

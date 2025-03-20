@@ -3,10 +3,12 @@ import About from "./components/About";
 import Sidebar from "./components/sidebar/Sidebar";
 import Portfolio from "./components/portfolio/Portfolio";
 import Resume from "./components/resume/Resume";
+import ScrollToTop from "./components/common/ScrollToTop";
 
 const App = () => {
   return (
     <div className="flex">
+      <ScrollToTop />
       {/* Fixed Sidebar */}
       <Sidebar />
 

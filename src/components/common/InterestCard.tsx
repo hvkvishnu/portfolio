@@ -12,7 +12,7 @@ const InterestCard = ({
           key={index}
           className="flex items-center gap-4 p-4 rounded-xl card-animation card-hover-color group"
         >
-          <span className="">{item.icon}</span>
+          <span>{item.icon}</span>
           <p className="description">{item.value}</p>
         </div>
       ))}
