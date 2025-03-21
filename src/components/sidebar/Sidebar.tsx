@@ -1,4 +1,4 @@
-import { useState, useRef } from "react";
+import { useState, useRef, useEffect } from "react";
 import { Link } from "react-scroll";
 import Profile from "./Profile";
 import ThemeToggle from "./ThemeToggle";
@@ -16,6 +16,21 @@ const Sidebar = () => {
   const sidebarRef = useRef<HTMLDivElement>(null);
 
   const toggleSidebar = () => setIsOpen(!isOpen);
+
+  useEffect(() => {
+    const handleOutsideClick = (e: MouseEvent) => {
+      if (
+        sidebarRef.current &&
+        !sidebarRef.current.contains(e.target as Node) &&
+        !(e.target as HTMLElement).closest(".toggle-btn")
+      ) {
+        setIsOpen(false);
+      }
+    };
+
+    window.addEventListener("mousedown", handleOutsideClick);
+    return () => window.removeEventListener("mousedown", handleOutsideClick);
+  }, []);
 
   return (
     <>

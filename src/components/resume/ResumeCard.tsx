@@ -19,8 +19,8 @@ const ResumeCard: React.FC<ResumeCardProps> = ({ resumeData }) => {
           styleOverride=" dark:bg-gray-700/40 dark:hover:bg-indigo-600"
         />
       )}
-      {resumeData.content.map((content) => (
-        <div className="flex flex-col gap-4">
+      {resumeData.content.map((content, index) => (
+        <div key={index} className="flex flex-col gap-4">
           {content.description && (
             <p className="italic text-gray-950 dark:text-indigo-500">
               {content.description}

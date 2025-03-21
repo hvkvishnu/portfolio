@@ -22,7 +22,7 @@ const ScrollToTop = () => {
   // Scroll to top function
   const scrollToTop = () => {
     scroll.scrollToTop({
-      duration: 1500,
+      duration: 1000,
       smooth: "easeInQuart",
     });
   };

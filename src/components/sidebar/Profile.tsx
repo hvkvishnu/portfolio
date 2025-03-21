@@ -5,7 +5,7 @@ const Profile = () => {
       {/* Profile Picture */}
       <img
         className="w-40 h-40 p-1 rounded-full inset-ring-4 inset-ring-indigo-500"
-        src="src/assets/profile.jpeg"
+        src="src/assets/profile.jpg"
         alt="Rounded avatar"
       />
 

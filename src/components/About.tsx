@@ -91,7 +91,7 @@ const About = () => {
       <div className="flex flex-col md:flex-row gap-10 pt-15">
         {/* Profile Image */}
         <img
-          src="src/assets/about.jpeg"
+          src="src/assets/about.jpg"
           alt="Personal Pic"
           className="w-100 h-130 object-cover rounded-2xl shadow-lg"
         />

@@ -17,25 +17,25 @@ const Resume = () => {
           <div>
             <div className={subHeadCss}>Education</div>
             {EducationDetails.map((e) => (
-              <ResumeCard resumeData={e} />
+              <ResumeCard key={e.title} resumeData={e} />
             ))}
           </div>
           <div>
             <div className={subHeadCss}>Technical Skills</div>
             {TechnicalDetails.map((e) => (
-              <ResumeCard resumeData={e} />
+              <ResumeCard key={e.title} resumeData={e} />
             ))}
           </div>
           <div>
             <div className={subHeadCss}>Certifications</div>
             {CertificationDetails.map((e) => (
-              <ResumeCard resumeData={e} />
+              <ResumeCard key={e.title} resumeData={e} />
             ))}
           </div>
           <div>
             <div className={subHeadCss}>Accolades</div>
             {AccoladesDetails.map((e) => (
-              <ResumeCard resumeData={e} />
+              <ResumeCard key={e.title} resumeData={e} />
             ))}
           </div>
         </div>
@@ -44,7 +44,7 @@ const Resume = () => {
           <div>
             <div className={subHeadCss}>Professional Experience</div>
             {ProfessionalDetails.map((e) => (
-              <ResumeCard resumeData={e} />
+              <ResumeCard key={e.title} resumeData={e} />
             ))}
           </div>
         </div>
