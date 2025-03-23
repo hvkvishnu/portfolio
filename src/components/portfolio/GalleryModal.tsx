@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import { useSwipeable } from "react-swipeable";
 
 type GalleryModalProps = {
   imageUrl: string;
@@ -33,6 +34,13 @@ const GalleryModal: React.FC<GalleryModalProps> = ({
     return () => window.removeEventListener("keydown", handleKeyDown);
   }, [onNext, onPrev, onClose]);
 
+  const handlers = useSwipeable({
+    onSwipedLeft: () => onNext(), // Swipe left → Next image
+    onSwipedRight: () => onPrev(), // Swipe right → Previous image
+    preventScrollOnSwipe: true,
+    trackMouse: true, // Enables mouse drag
+  });
+
   return (
     <AnimatePresence>
       {isOpen && (
@@ -41,6 +49,7 @@ const GalleryModal: React.FC<GalleryModalProps> = ({
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
+          {...handlers}
         >
           {/* Image Animation */}
           <motion.img

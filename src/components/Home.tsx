@@ -1,15 +1,15 @@
 import { motion } from "framer-motion";
 import { ChevronDown } from "lucide-react";
 import { Link } from "react-scroll";
-import coverImage from "../assets/cover.jpg";
 import { TypeAnimation } from "react-type-animation";
+import { ASSETS_BASE_PATH } from "../constants/portfolio.constant";
 
 const Home = () => {
   return (
     <section
       id="home"
       className="relative h-screen bg-cover bg-center flex justify-center text-white"
-      style={{ backgroundImage: `url(${coverImage})` }} // Replace with your image path
+      style={{ backgroundImage: `url(${ASSETS_BASE_PATH}/cover.jpg)` }} // Replace with your image path
     >
       {/* Overlay to make text more readable */}
       <div className="absolute inset-0 bg-black/50"></div>

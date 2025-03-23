@@ -1,11 +1,13 @@
 import { FaGoogle, FaLinkedin } from "react-icons/fa";
+import { ASSETS_BASE_PATH } from "../../constants/portfolio.constant";
+
 const Profile = () => {
   return (
     <div>
       {/* Profile Picture */}
       <img
         className="w-40 h-40 p-1 rounded-full inset-ring-4 inset-ring-indigo-500"
-        src="src/assets/profile.jpg"
+        src={`${ASSETS_BASE_PATH}/profile.jpg`}
         alt="Rounded avatar"
       />
 
