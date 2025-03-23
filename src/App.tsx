@@ -4,11 +4,14 @@ import Sidebar from "./components/sidebar/Sidebar";
 import Portfolio from "./components/portfolio/Portfolio";
 import Resume from "./components/resume/Resume";
 import ScrollToTop from "./components/common/ScrollToTop";
+import Contact from "./components/Contact";
+import { Toaster } from "react-hot-toast";
 
 const App = () => {
   return (
     <div className="flex">
       <ScrollToTop />
+      <Toaster position="top-right" reverseOrder={false} />
       {/* Fixed Sidebar */}
       <Sidebar />
 
@@ -21,6 +24,8 @@ const App = () => {
         <Portfolio />
 
         <Resume />
+
+        <Contact />
       </main>
     </div>
   );

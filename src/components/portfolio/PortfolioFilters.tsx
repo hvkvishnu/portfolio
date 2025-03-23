@@ -13,7 +13,7 @@ const PortfolioFilter: React.FC<PortfolioFilterProps> = ({
   onSelectCategory,
 }) => {
   return (
-    <div className="flex justify-center space-x-4 mb-6">
+    <div className="flex sm:justify-center no-scrollbar space-x-4 mb-6 overflow-x-scroll">
       {categories.map((category) => (
         <motion.button
           key={category}

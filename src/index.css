@@ -62,6 +62,14 @@
     @apply text-base/7;
   }
 
+  .card-color {
+    @apply bg-white dark:bg-gray-800 dark:border-gray-700 shadow-sm;
+  }
+
+  .card-level-2 {
+    @apply !bg-gray-300/10 rounded-xl;
+  }
+
   .card-animation {
     @apply shadow-sm hover:shadow-md delay-50 duration-300 transition-all ease-in-out hover:-translate-y-1 hover:scale-105 bg-white dark:bg-gray-800 dark:border-gray-700;
   }
@@ -83,7 +91,7 @@
   }
 
   .sidenav-link {
-    @apply cursor-pointer flex gap-4 text-gray-400 items-center;
+    @apply cursor-pointer flex gap-3 text-gray-400 items-end;
   }
 
   .sidenav-icon {
@@ -100,5 +108,16 @@
 
   .sidenav-link.active .sidenav-menu {
     @apply text-gray-50;
+  }
+}
+
+@layer utilities {
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+
+  .no-scrollbar {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
   }
 }

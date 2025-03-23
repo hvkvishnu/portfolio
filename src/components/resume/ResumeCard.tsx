@@ -1,7 +1,7 @@
-import { ResumeData } from "../../types/resume.types";
 import { motion } from "framer-motion";
 import Badge from "../common/Badge";
 import ListWithIcons from "../common/List";
+import { ResumeData } from "../../types";
 
 type ResumeCardProps = {
   resumeData: ResumeData;

@@ -9,7 +9,7 @@ import {
   FaBars,
   FaTimes,
 } from "react-icons/fa";
-import { FaFile } from "react-icons/fa6";
+import { FaFile, FaPhone } from "react-icons/fa6";
 
 const Sidebar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -62,6 +62,7 @@ const Sidebar = () => {
             { to: "about", icon: <FaAddressCard />, label: "About" },
             { to: "portfolio", icon: <FaBriefcase />, label: "Portfolio" },
             { to: "resume", icon: <FaFile />, label: "Resume" },
+            { to: "contact", icon: <FaPhone />, label: "Contact" },
           ].map(({ to, icon, label }) => (
             <Link
               key={to}
