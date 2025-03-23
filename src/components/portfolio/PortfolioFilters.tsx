@@ -25,7 +25,7 @@ const PortfolioFilter: React.FC<PortfolioFilterProps> = ({
           onClick={() => onSelectCategory(category)}
           whileHover={{ scale: 1.1 }}
           whileTap={{ scale: 0.9 }}
-          initial={{ opacity: 0, y: -10 }}
+          initial={{ opacity: 0, y: 100 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.2 }}
         >

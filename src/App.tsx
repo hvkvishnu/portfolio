@@ -9,7 +9,7 @@ import { Toaster } from "react-hot-toast";
 
 const App = () => {
   return (
-    <div className="flex">
+    <div className="flex overflow-x-hidden">
       <ScrollToTop />
       <Toaster position="top-right" reverseOrder={false} />
       {/* Fixed Sidebar */}
