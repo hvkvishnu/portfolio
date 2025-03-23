@@ -20,7 +20,7 @@ const Home = () => {
         transition={{ duration: 1 }}
         className="relative text-center z-10 mt-10"
       >
-        <h1 className="text-5xl md:text-6xl font-bold">Hello, I'm Vishnu</h1>
+        <h1 className="text-5xl md:text-6xl font-medium">Hello, I'm Vishnu</h1>
         <TypeAnimation
           sequence={[
             "An Engineer",
@@ -33,7 +33,7 @@ const Home = () => {
           wrapper="span"
           speed={30} // Typing speed
           repeat={Infinity} // Loop animation
-          className="text-2xl font-semibold text-blue-500"
+          className="text-2xl font-semibold text-indigo-400"
         />
       </motion.div>
 
@@ -48,7 +48,7 @@ const Home = () => {
           to="about"
           smooth={true}
           duration={700}
-          className="cursor-pointer"
+          className="cursor-pointer text-indigo-500"
         >
           <ChevronDown size={40} className="animate-bounce" />
         </Link>

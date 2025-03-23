@@ -17,47 +17,6 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
-}
-
-body {
-  margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
-}
-
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
-}
-
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color; */
-/* } */
-
 @import "tailwindcss";
 @custom-variant dark (&:where(.dark, .dark *));
 @tailwind base;
@@ -66,12 +25,99 @@ button:focus-visible {
 
 @layer base {
   main {
-    @apply text-gray-900 bg-white dark:text-gray-100 dark:bg-gray-900;
+    @apply text-gray-600 dark:text-gray-400 bg-white dark:bg-gray-900;
   }
 }
 
 @layer components {
-  h2 {
-    @apply relative pb-2 after:content-[''] after:absolute after:w-[50px] after:h-[3px] after:bottom-0 after:left-0 after:bg-purple-700;
+  .badge {
+    @apply inline-flex items-center rounded-full px-3 py-1 font-medium ring-1 ring-purple-700/10 ring-inset;
+  }
+
+  .badge-animate {
+    @apply hover:bg-indigo-600 dark:bg-gray-800 dark:border-gray-700 hover:text-white text-indigo-500 transition-colors duration-300;
+  }
+
+  .header {
+    @apply text-indigo-900 dark:text-indigo-600;
+  }
+
+  .line-after {
+    @apply relative pb-2 after:content-[''] after:absolute after:w-[50px] after:h-[3px] after:bottom-0 after:left-0 after:bg-indigo-500;
+  }
+
+  .link {
+    @apply text-indigo-500 hover:text-indigo-800 dark:hover:text-indigo-600 transition-colors;
+  }
+
+  .link-line {
+    @apply relative after:content-[''] after:absolute after:left-0 after:bottom-[-2px] 
+    after:w-full after:h-[2px] after:bg-indigo-500
+    after:scale-x-0 after:origin-bottom-right 
+    after:transition-transform after:duration-300 after:ease-out 
+    hover:after:scale-x-100 hover:after:origin-bottom-left;
+  }
+
+  .description {
+    @apply text-base/7;
+  }
+
+  .card-color {
+    @apply bg-white dark:bg-gray-800 dark:border-gray-700 shadow-sm;
+  }
+
+  .card-level-2 {
+    @apply !bg-gray-300/10 rounded-xl;
+  }
+
+  .card-animation {
+    @apply shadow-sm hover:shadow-md delay-50 duration-300 transition-all ease-in-out hover:-translate-y-1 hover:scale-105 bg-white dark:bg-gray-800 dark:border-gray-700;
+  }
+
+  .icon {
+    @apply w-6 h-6 text-indigo-500 group-hover:text-white;
+  }
+
+  .card-hover-color {
+    @apply hover:bg-indigo-600 hover:text-white;
+  }
+
+  .btn-primary-fixed {
+    @apply bg-indigo-600 text-white;
+  }
+
+  .btn-secondary-fixed {
+    @apply bg-gray-200 dark:bg-gray-800 dark:border-gray-700;
+  }
+
+  .sidenav-link {
+    @apply cursor-pointer flex gap-3 text-gray-400 items-end;
+  }
+
+  .sidenav-icon {
+    @apply w-6 h-6 group-hover:text-indigo-600;
+  }
+
+  .sidenav-link.active .sidenav-icon {
+    @apply text-indigo-600;
+  }
+
+  .sidenav-menu {
+    @apply hover:text-gray-50;
+  }
+
+  .sidenav-link.active .sidenav-menu {
+    @apply text-gray-50;
+  }
+}
+
+@layer utilities {
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+
+  .no-scrollbar {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
   }
 }
