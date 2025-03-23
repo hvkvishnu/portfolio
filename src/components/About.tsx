@@ -14,6 +14,7 @@ import { DiscAlbumIcon } from "lucide-react";
 import InterestCard from "./common/InterestCard";
 import { MdSurfing } from "react-icons/md";
 import ScrollFadeIn from "./common/ScrollFadeIn";
+import { ASSETS_BASE_PATH } from "../constants/portfolio.constant";
 
 const About = () => {
   const skills = [
@@ -94,7 +95,7 @@ const About = () => {
         <div className="flex-none">
           <ScrollFadeIn initialValue={{ opacity: 0, x: -100 }}>
             <img
-              src="src/assets/about.jpg"
+              src={`${ASSETS_BASE_PATH}/about.jpg`}
               alt="Personal Pic"
               className="w-100 h-130 object-cover rounded-2xl shadow-lg"
             />

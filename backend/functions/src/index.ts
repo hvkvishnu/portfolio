@@ -7,7 +7,7 @@ const API_KEY = process.env.SENDGRID_API_KEY || "";
 sgMail.setApiKey(API_KEY);
 
 export const sendEmail = functions.https.onRequest(async (req, res) => {
-  res.set("Access-Control-Allow-Origin", "*"); // Allow all origins
+  res.set("Access-Control-Allow-Origin", "https://hvkvishnu.github.io"); // Allow all origins
   res.set("Access-Control-Allow-Methods", "POST"); // Allowed methods
   res.set("Access-Control-Allow-Headers", "Content-Type");
 
