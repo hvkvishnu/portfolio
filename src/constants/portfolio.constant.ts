@@ -1,7 +1,7 @@
 import { PortfolioItem } from "../types";
 
 // Define the base path (use public folder if deploying to GitHub Pages)
-export const ASSETS_BASE_PATH = `${import.meta.env.BASE_URL}/assets`;
+export const ASSETS_BASE_PATH = `/assets`;
 
 // Function to dynamically generate asset paths
 export const getAssetPath = (
