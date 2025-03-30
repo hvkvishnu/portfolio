@@ -99,4 +99,9 @@ export const PortfolioItems: PortfolioItem[] = [
     imageUrl: getAssetPath("Events", "One_Presidio_2023.jpg"),
     title: "One Presidio Cultural Event 2023",
   },
+  {
+    category: "Events",
+    imageUrl: getAssetPath("Events", "AZ_Conf_2023.jpg"),
+    title: "AZ Cloud & AI Conference",
+  },
 ];
