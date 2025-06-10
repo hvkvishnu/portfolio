@@ -42,6 +42,12 @@ export const PortfolioItems: PortfolioItem[] = [
   },
   {
     category: "Certifications",
+    imageUrl: getAssetPath("Certificates", "AWS_AIF.jpg"),
+    link: "https://www.credly.com/badges/c9ccbe35-c94c-4fa6-aeee-414910aefdb7/public_url",
+    title: "AWS AIF CO1",
+  },
+  {
+    category: "Certifications",
     imageUrl: getAssetPath("Certificates", "AWS_SAA.jpg"),
     link: "https://www.credly.com/badges/ffa2737a-55cd-4b1e-b3f0-c59a0d54da3e/public_url",
     title: "AWS SAA CO3",
