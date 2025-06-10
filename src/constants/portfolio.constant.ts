@@ -1,7 +1,7 @@
 import { PortfolioItem } from "../types";
 
 // Define the base path (use public folder if deploying to GitHub Pages)
-export const ASSETS_BASE_PATH = `${import.meta.env.BASE_URL}/assets`;
+export const ASSETS_BASE_PATH = `/assets`;
 
 // Function to dynamically generate asset paths
 export const getAssetPath = (
@@ -39,6 +39,12 @@ export const PortfolioItems: PortfolioItem[] = [
     category: "Recognitions",
     imageUrl: getAssetPath("Recognitions", "SpotAward_Aug2022.jpg"),
     title: "Spot Award August 2022",
+  },
+  {
+    category: "Certifications",
+    imageUrl: getAssetPath("Certificates", "AWS_AIF.jpg"),
+    link: "https://www.credly.com/badges/c9ccbe35-c94c-4fa6-aeee-414910aefdb7/public_url",
+    title: "AWS AIF CO1",
   },
   {
     category: "Certifications",
@@ -98,5 +104,10 @@ export const PortfolioItems: PortfolioItem[] = [
     category: "Events",
     imageUrl: getAssetPath("Events", "One_Presidio_2023.jpg"),
     title: "One Presidio Cultural Event 2023",
+  },
+  {
+    category: "Events",
+    imageUrl: getAssetPath("Events", "AZ_Conf_2023.jpg"),
+    title: "AZ Cloud & AI Conference",
   },
 ];

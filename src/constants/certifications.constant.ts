@@ -2,6 +2,19 @@ import { ResumeData } from "../types/resume.types";
 
 export const CertificationDetails: ResumeData[] = [
   {
+    title: "AWS Certified AI Practitioner",
+    period: "Jun 2025",
+    content: [
+      {
+        description: "AWS Training and Certification.",
+        details: [
+          "Gained knowledge on AI/ML fundamentals, generative AI principles, and AWS AI services including Amazon Bedrock, SageMaker, and Amazon Q.",
+          "Gained expertise in Responsible AI practices covering bias mitigation, fairness, transparency, and ethical AI governance frameworks.",
+        ],
+      },
+    ],
+  },
+  {
     title: "Develop Advanced Enterprise Search and Conversation Applications",
     period: "Jan 2025",
     content: [

@@ -9,7 +9,7 @@ type ResumeCardProps = {
 
 const ResumeCard: React.FC<ResumeCardProps> = ({ resumeData }) => {
   return (
-    <div className="rounded-xl card-animation hover:scale-100 p-6 flex flex-col gap-4 mt-5">
+    <div className="rounded-xl card-animation hover:scale-100 p-6 flex flex-col gap-4 mb-5">
       <h2 className="header text-xl dark:text-white font-bold">
         {resumeData.title}
       </h2>

@@ -14,7 +14,7 @@ const Resume = () => {
       <h2 className="header line-after text-4xl font-bold">Resume</h2>
 
       <div className="grid md:grid-cols-[1.5fr_1.75fr] gap-20 pt-10">
-        <div className="flex flex-col gap-15" id="column-left">
+        <div className="flex flex-col gap-5" id="column-left">
           <div className={subHeadCss}>Education</div>
           {EducationDetails.map((e) => (
             <ScrollFadeIn initialValue={{ opacity: 0, x: -100 }}>
@@ -44,15 +44,13 @@ const Resume = () => {
           ))}
         </div>
 
-        <div id="column-right">
-          <div>
-            <div className={subHeadCss}>Professional Experience</div>
-            {ProfessionalDetails.map((e) => (
-              <ScrollFadeIn initialValue={{ opacity: 0, x: 100 }}>
-                <ResumeCard key={e.title} resumeData={e} />
-              </ScrollFadeIn>
-            ))}
-          </div>
+        <div id="column-right" className="flex flex-col gap-5">
+          <div className={subHeadCss}>Professional Experience</div>
+          {ProfessionalDetails.map((e) => (
+            <ScrollFadeIn initialValue={{ opacity: 0, x: 100 }}>
+              <ResumeCard key={e.title} resumeData={e} />
+            </ScrollFadeIn>
+          ))}
         </div>
       </div>
     </section>
