@@ -6,6 +6,7 @@ export const AccoladesDetails: ResumeData[] = [
     content: [
       {
         details: [
+          "Finalist at <b>#PresidioInnovationSprint2025</b> with Twinster, an AI platform for end-to-end digital avatar (twin) lifecycle management, delivering immersive experiences through real-time voice interaction, lifelike visual avatars, and AI-driven slide presentations",
           "Winner of <b>#PresidioInnovationSprint2024</b> with CodePaw, a Generative AI tool to modernize legacy JSP systems, competing against 60+ teams (35+ from India, 15+ from US, 10+ global teams).",
           "Second runner-up of <b>#HackTheFuture2023</b> with ProposalWiz, simplifying RFP drafting using Generative AI, showcasing resilience against 65+ teams and 400+ engineers globally.",
           "Winner of <b>#HackTheFuture2022</b> with Diddohub, an innovative platform for educational content creators to curate and track videos/notes, competing against 54 teams and 310 engineers across Presidio India locations",

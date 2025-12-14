@@ -77,8 +77,13 @@ export const PortfolioItems: PortfolioItem[] = [
   },
   {
     category: "Awards",
-    imageUrl: getAssetPath("Awards", "Hackathon_2022.jpg"),
-    title: "Winner of Hackathon 2022",
+    imageUrl: getAssetPath("Awards", "Impact_Revenue_Project_2025.jpg"),
+    title: "High Impact Revenue Project 2025",
+  },
+  {
+    category: "Awards",
+    imageUrl: getAssetPath("Awards", "Hackathon_2024.jpg"),
+    title: "Winner of Hackathon 2024",
   },
   {
     category: "Awards",
@@ -87,8 +92,8 @@ export const PortfolioItems: PortfolioItem[] = [
   },
   {
     category: "Awards",
-    imageUrl: getAssetPath("Awards", "Hackathon_2024.jpg"),
-    title: "Winner of Hackathon 2024",
+    imageUrl: getAssetPath("Awards", "Hackathon_2022.jpg"),
+    title: "Winner of Hackathon 2022",
   },
   {
     category: "Events",
